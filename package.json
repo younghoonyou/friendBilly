@@ -30,7 +30,7 @@
   "scripts": {
     "start": "env-cmd -f .env react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "npm run build",
+    "predeploy": "env-cmd -f .env npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
