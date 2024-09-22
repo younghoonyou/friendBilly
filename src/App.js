@@ -68,6 +68,8 @@ function App() {
       const accountSid = process.env.REACT_APP_TWILIO_ACC_SID
       const authToken = process.env.REACT_APP_TWILIO_AUTH_TOKEN
       const auth = 'Basic ' + new Buffer(accountSid + ':' + authToken).toString('base64');
+      console.log(auth)
+      // return
       const url = process.env.REACT_APP_TWILIO_URL
       const details = {
           To: process.env.REACT_APP_BILLY_PHONE,
@@ -200,7 +202,7 @@ function App() {
           <p style={{fontSize: '10px'}}>
             @welovebilly ⭐⭐⭐⭐⭐ 9 months ago <br />
             Kind | Gentle | Smart <br />
-            very kind, good lister. Highly recommend to meet in person!
+            very kind, good listener. Highly recommend to meet in person!
           </p>
           <br />
           <p style={{fontSize: '10px'}}>
